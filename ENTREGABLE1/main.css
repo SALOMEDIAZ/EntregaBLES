@@ -66,14 +66,23 @@ body {
 
 .nav-links {
     list-style: none;
-    display: flex;
     gap: 20px;
+    display: flex;
+    justify-content: flex-end;
 }
+
+.top-bar a {
+    margin-left: 20px;
+}
+
 
 .nav-links a {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .nav-links a:hover {
@@ -110,10 +119,16 @@ body {
     display: block;
 }
 
-.cart-icon, .search-icon {
+nav i {
     font-size: 20px;
-    color: white;
+    color: #ffffff;     
+    margin-right: 8px; 
 }
+nav i:hover {
+  color: #c49754;
+}
+
+
 
 .nav-links li {
     position: relative;
@@ -147,6 +162,7 @@ body {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 
@@ -182,10 +198,19 @@ body {
     justify-content: center;
 }
 
-    .h3{
-        display: flex;
-        justify-content: center;
-    }
+
+.destacados .products-grid {
+    display: flex;
+    justify-content: center;
+  
+}
+
+.mas-vendidos .products-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
