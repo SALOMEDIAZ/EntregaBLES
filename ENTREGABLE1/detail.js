@@ -20,6 +20,41 @@ function goToProductDetail(name, price, description, imageUrl) {
       document.getElementById("product-image").src = image;
     }
   };
+
+let carrito = [];
+
+function mostrarCarrito() {
+    const modal = document.getElementById("modal-carrito");
+    const cartItems = document.getElementById("cart-items");
+    cartItems.innerHTML = ""; 
+    carrito.forEach(producto => {
+        const li = document.createElement("li");
+        li.textContent = producto;
+        cartItems.appendChild(li);
+    });
+    document.getElementById("cart-count").textContent = carrito.length;
+    modal.style.display = "block";
+}
+
+function cerrarCarrito() {
+    document.getElementById("modal-carrito").style.display = "none";
+}
+
+document.querySelectorAll('.btn-add').forEach(button => {
+    button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        carrito.push(producto); 
+        document.getElementById("cart-count").textContent = carrito.length; 
+    });
+});
+
+window.onclick = function(event) {
+    const modal = document.getElementById("modal-carrito");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
   
   
   function addToCart() {

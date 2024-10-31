@@ -1,8 +1,14 @@
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2ebe3;
-    color: #5e4630;
+  font-family: Arial, sans-serif;
+  background-color: #f2ebe3;
+  color: #5e4630;
 }
 
 
@@ -40,7 +46,11 @@ body {
   font-size: 14px;
 }
 
-
+.contact-info {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
 
 .navbar {
   display: flex;
