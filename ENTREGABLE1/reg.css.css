@@ -193,4 +193,16 @@ body {
   .forgot-link:hover {
     text-decoration: underline;
   }
-  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f7e6c4;
+    text-align: center;
+}
+
+.social-media a {
+    color: #6c757d;
+    margin: 0 5px;
+    font-size: 1.5em;
+}

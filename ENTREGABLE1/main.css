@@ -211,6 +211,20 @@ nav i:hover {
     align-items: center;
 }
 
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4d300e; 
+    color: white; 
+    text-align: center; 
+    text-decoration: none; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; }
+
+.button:hover {
+    background-color: #b99147;}
+
 
 
 

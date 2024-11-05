@@ -32,26 +32,51 @@
                     <a href="#">Perlas</a>
                 </div>
             </li>
-            <li><a href="#">Accesorios y Máquinas</a></li>
+            <li><a href="main.html">Tienda Online</a></li>
             <i class="fas fa-search"></i>
             <i class="fas fa-shopping-cart"></i>
             <a href="user.html" target="_blank">
               <i class="fas fa-user"></i> 
+              <a href="favoritos.html" target="_blank">
+                <i class="fas fa-heart"></i> 
           </a>
       
         </ul>
     </nav>
 </header>
 
-  <section class="product-detail">
-    <img id="product-image" src="" alt="Producto" class="product-image">
-    <h2 id="product-name"></h2>
-    <p id="product-price"></p>
-    <p id="product-description"></p>
-    <button onclick="addToCart()">Añadir al Carrito</button>
-  </section>
 
-  <script src="detail.js"></script>
+   
+<div class="contenedor-producto">
+  <div class="detalle">
+      <div class="producto">
+          <img class="imagen-producto" id="productImage" src="" alt="Producto">
+      </div>
+      <div class="descripcion">
+          <h2 id="productName"></h2> 
+          <p id="productDescription"></p> 
+          <h3 id="productPrice"></h3> 
+          <button onclick="addToCart()">Añadir a favoritos</button>
+      </div>
+  </div>
+</div>
+
+
+
+    
+    <div class="footer">
+        <p>©2024 Bubble Tea Store</p>
+        <div class="social-media">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+
+
+    <script src="./data.js"></script>
+    <script src="./detail.js"></script>
 </body>
 </html>
+
 
